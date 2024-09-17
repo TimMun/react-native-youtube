@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/inProgress-team/react-native-youtube#readme",
   "dependencies": {
-    "prop-types": "^15.5.0"
+    "prop-types": "^15.5.0",
+    "deprecated-react-native-prop-types": "^2.3.0"
   },
   "peerDependencies": {
     "react-native": ">=0.37"

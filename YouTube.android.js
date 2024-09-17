@@ -6,7 +6,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactNative, {
   View,
-  ViewPropTypes,
   Text,
   StyleSheet,
   requireNativeComponent,
@@ -15,6 +14,7 @@ import ReactNative, {
   BackAndroid,
   BackHandler as BackHandlerModule,
 } from 'react-native';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 
 const BackHandler = BackHandlerModule || BackAndroid;
 
@@ -45,7 +45,7 @@ export default class YouTube extends React.Component {
     onChangeState: PropTypes.func,
     onChangeQuality: PropTypes.func,
     onChangeFullscreen: PropTypes.func,
-    style: (ViewPropTypes && ViewPropTypes.style) || View.propTypes.style,
+    style: ViewPropTypes.style,
   };
 
   static defaultProps = {
